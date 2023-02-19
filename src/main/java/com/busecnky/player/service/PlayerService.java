@@ -48,12 +48,9 @@ public class PlayerService extends ServiceManager<Player,Long> {
     }
 
     public void saveMain(Long jerseyNo) {
-        System.out.println("xxxx" + jerseyNo);
         Group group = groupRepository.findByJerseyNo(jerseyNo);
-        System.out.println(jerseyNo);
         PlayersCreateRequestDto dto = IPlayersMapper.INSTANCE
                 .playersCreateRequestDto(IPlayersMapper.INSTANCE.groupToPlayer(group));
-        System.out.println(dto);
         dto.setTeamType(ETeam.MAIN);
         save(dto);
     }

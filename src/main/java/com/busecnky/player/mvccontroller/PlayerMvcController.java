@@ -31,8 +31,8 @@ public class PlayerMvcController {
                 .playerDtoList(playerService.findAllResponseDtos())
                 .group1DtoList(groupService.findAllResponseDtos())
                 .group2DtoList(groupService.findAllResponseDtos())
-                .btnekle("Ekle")
-                .btnsil("Sil")
+                .btnekle("→")
+                .btnsil("←")
                 .build()
 
         );
@@ -52,22 +52,15 @@ public class PlayerMvcController {
             System.out.println("Hata oluştu..." + exception.toString());
         }
 
-
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("index");
 
-        PlayerIndexModel playerModel = new PlayerIndexModel();
-        //PlayerIndexModel groupModel = new PlayerIndexModel();
-        //playerModel.setPlayerDtoList(playerService.findAllResponseDtos());
-        //groupModel.setGroupDtoList(groupService.findAllResponseDtos());
-        //modelAndView.addObject("model.playerList", playerModel);
-        //modelAndView.addObject("model.group2List", groupModel);
         modelAndView.addObject("model", PlayerIndexModel.builder()
                 .playerDtoList(playerService.findAllResponseDtos())
                 .group1DtoList(groupService.findAllResponseDtos().stream().filter(x->x.getTeamType()== ETeam.TEAM1).toList())
                 .group2DtoList(groupService.findAllResponseDtos().stream().filter(x->x.getTeamType()== ETeam.TEAM2).toList())
-                .btnekle("Ekle")
-                .btnsil("Sil")
+                .btnekle("→")
+                .btnsil("←")
                 .build()
 
         );
@@ -90,18 +83,13 @@ public class PlayerMvcController {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("index");
 
-        PlayerIndexModel playerModel = new PlayerIndexModel();
-        //PlayerIndexModel groupModel = new PlayerIndexModel();
-        //playerModel.setPlayerDtoList(playerService.findAllResponseDtos());
-        //groupModel.setGroupDtoList(groupService.findAllResponseDtos());
-        //modelAndView.addObject("model.playerList", playerModel);
-        //modelAndView.addObject("model.group2List", groupModel);
+
         modelAndView.addObject("model", PlayerIndexModel.builder()
                 .playerDtoList(playerService.findAllResponseDtos())
                 .group1DtoList(groupService.findAllResponseDtos().stream().filter(x->x.getTeamType()== ETeam.TEAM1).toList())
                 .group2DtoList(groupService.findAllResponseDtos().stream().filter(x->x.getTeamType()== ETeam.TEAM2).toList())
-                .btnekle("Ekle")
-                .btnsil("Sil")
+                .btnekle("→")
+                .btnsil("←")
                 .build()
 
         );
@@ -125,18 +113,12 @@ public class PlayerMvcController {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("index");
 
-        PlayerIndexModel playerModel = new PlayerIndexModel();
-        //PlayerIndexModel groupModel = new PlayerIndexModel();
-        //playerModel.setPlayerDtoList(playerService.findAllResponseDtos());
-        //groupModel.setGroupDtoList(groupService.findAllResponseDtos());
-        //modelAndView.addObject("model.playerList", playerModel);
-        //modelAndView.addObject("model.group2List", groupModel);
         modelAndView.addObject("model", PlayerIndexModel.builder()
                 .playerDtoList(playerService.findAllResponseDtos())
                 .group1DtoList(groupService.findAllResponseDtos().stream().filter(x->x.getTeamType()== ETeam.TEAM1).toList())
                 .group2DtoList(groupService.findAllResponseDtos().stream().filter(x->x.getTeamType()== ETeam.TEAM2).toList())
-                .btnekle("Ekle")
-                .btnsil("Sil")
+                .btnekle("→")
+                .btnsil("←")
                 .build()
 
         );
@@ -160,18 +142,12 @@ public class PlayerMvcController {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("index");
 
-        PlayerIndexModel playerModel = new PlayerIndexModel();
-        //PlayerIndexModel groupModel = new PlayerIndexModel();
-        //playerModel.setPlayerDtoList(playerService.findAllResponseDtos());
-        //groupModel.setGroupDtoList(groupService.findAllResponseDtos());
-        //modelAndView.addObject("model.playerList", playerModel);
-        //modelAndView.addObject("model.group2List", groupModel);
         modelAndView.addObject("model", PlayerIndexModel.builder()
                 .playerDtoList(playerService.findAllResponseDtos())
                 .group1DtoList(groupService.findAllResponseDtos().stream().filter(x->x.getTeamType()== ETeam.TEAM1).toList())
                 .group2DtoList(groupService.findAllResponseDtos().stream().filter(x->x.getTeamType()== ETeam.TEAM2).toList())
-                .btnekle("Ekle")
-                .btnsil("Sil")
+                .btnekle("→")
+                .btnsil("←")
                 .build()
 
         );

@@ -44,22 +44,16 @@ public class GroupService extends ServiceManager<Group,Long> {
     }
 
     public void saveOne(Long jerseyNo) {
-        System.out.println("xxxx" + jerseyNo);
         Player player = playerRepository.findByJerseyNo(jerseyNo);
-        System.out.println(jerseyNo);
         GroupCreateRequestDto dto = IGroupMapper.INSTANCE
                 .groupCreateRequestDto(IGroupMapper.INSTANCE.playertoGroup(player));
-        System.out.println(dto);
         dto.setTeamType(ETeam.TEAM1);
         save(dto);
     }
     public void saveTwo(Long jerseyNo) {
-        System.out.println("xxxx" + jerseyNo);
         Player player = playerRepository.findByJerseyNo(jerseyNo);
-        System.out.println(jerseyNo);
         GroupCreateRequestDto dto = IGroupMapper.INSTANCE
                 .groupCreateRequestDto(IGroupMapper.INSTANCE.playertoGroup(player));
-        System.out.println(dto);
         dto.setTeamType(ETeam.TEAM2);
         save(dto);
     }
