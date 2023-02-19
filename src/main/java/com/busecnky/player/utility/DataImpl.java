@@ -35,50 +35,50 @@ public class DataImpl implements ApplicationRunner {
 
         Player player6 = Player.builder()
                 .name("Mert")
-                .surname("Namsal")
-                .jerseyNo(6L)
+                .surname("Öz")
+                .jerseyNo(12L)
                 .teamType(ETeam.MAIN)
                 .build();
 
         Player player4 = Player.builder()
                 .name("Ali")
-                .surname("Öğütçen")
+                .surname("Kaya")
                 .jerseyNo(4L)
                 .teamType(ETeam.MAIN)
                 .build();
 
         Player player8 = Player.builder()
-                .name("Furkan")
+                .name("Nazlı")
                 .surname("Türkmen")
-                .jerseyNo(8L)
+                .jerseyNo(10L)
                 .teamType(ETeam.MAIN)
                 .build();
 
         Player player10 = Player.builder()
-                .name("Melihcan")
-                .surname("Öztürk")
-                .jerseyNo(10L)
+                .name("Melih")
+                .surname("Kürk")
+                .jerseyNo(7L)
                 .teamType(ETeam.MAIN)
                 .build();
 
         Player player2 = Player.builder()
                 .name("Buse")
                 .surname("Çankaya")
-                .jerseyNo(2L)
+                .jerseyNo(11L)
                 .teamType(ETeam.MAIN)
                 .build();
 
         Player player1 = Player.builder()
                 .name("Murat")
                 .surname("Kaya")
-                .jerseyNo(1L)
+                .jerseyNo(3L)
                 .teamType(ETeam.MAIN)
                 .build();
 
         Player player3 = Player.builder()
                 .name("Fatih")
                 .surname("Er")
-                .jerseyNo(3L)
+                .jerseyNo(8L)
                 .teamType(ETeam.MAIN)
                 .build();
 
@@ -92,7 +92,7 @@ public class DataImpl implements ApplicationRunner {
         Player player7 = Player.builder()
                 .name("Baran")
                 .surname("Mora")
-                .jerseyNo(7L)
+                .jerseyNo(2L)
                 .teamType(ETeam.MAIN)
                 .build();
 

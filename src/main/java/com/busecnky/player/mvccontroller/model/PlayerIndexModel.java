@@ -20,6 +20,7 @@ public class PlayerIndexModel {
 
     String title;
 
+
     List<PlayersFindAllResponseDto> playerDtoList;
     List<GroupFindAllResponseDto> group1DtoList;
     List<GroupFindAllResponseDto> group2DtoList;

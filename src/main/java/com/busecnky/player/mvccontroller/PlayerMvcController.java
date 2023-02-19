@@ -21,7 +21,7 @@ public class PlayerMvcController {
     private final PlayerService playerService;
     private final GroupService groupService;
 
-    @GetMapping("/index")
+    @GetMapping(INDEX)
     public ModelAndView index(){
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("index");
